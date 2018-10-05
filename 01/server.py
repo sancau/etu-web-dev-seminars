@@ -78,7 +78,7 @@ def main():
     server_socket.bind((HOST, PORT))
     server_socket.listen(MAX_CONNECTIONS)
     print(f'Listening on {HOST}:{PORT}. Encoding: {ENCODING}.')
-    
+
     # the main loop
     while True:
         client_socket, (client_ip, client_port) = server_socket.accept()
