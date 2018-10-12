@@ -1,9 +1,22 @@
+from .record import Record
+
+
 def invalid_method(r):
     return f'<h1>{r.method} method is not allowed.</h1>', 405
 
 
 def generic_page(r):
     return f'<h1>You requested {r.path} page</h1>', 200
+
+
+def show_records(r):
+    records = Record.get_list()
+    out = '<hr />'
+    out += '<ol>'
+    for r in records:
+        out += f'<li>Title: {r["title"]} | Message: {r["message"]}</li>'
+    out += '</ol>'
+    return out, 200
 
 
 def render_python():

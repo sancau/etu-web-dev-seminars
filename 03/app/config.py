@@ -8,6 +8,4 @@ ENCODING = 'UTF-8'
 
 
 DB_PATH = './records.db'
-
-
 db = DB(path=DB_PATH)

@@ -22,6 +22,7 @@ class DB:
             self.cursor.execute(query, params)
         else:
             self.cursor.execute(query)
+
         return [
             {col[0]: x for col, x in zip(self.cursor.description, row)}
             for row in self.cursor.fetchall()
