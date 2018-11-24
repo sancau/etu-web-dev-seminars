@@ -1,0 +1,46 @@
+* {
+    color: #888;
+    font-family: Arial;
+    font-size: 110%;
+    outline: None;
+}
+
+#header {
+    font-size: 150%;
+    margin: 20px;
+}
+
+#search {
+    margin: 20px;
+}
+
+#records-container {
+    max-width: 800px;
+    margin: 20px;
+}
+
+#records-container .record {
+    border: 1px solid gainsboro;
+    margin-top: 15px;
+}
+
+#records-container .record .title {
+    margin: 10px;
+    border-bottom: 1px solid #888;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 95%;
+}
+
+#records-container .record .message {
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 80%;
+}
+
+#search input {
+    padding: 10px;
+    font-size: 80%;
+    min-width: 300px;
+}
