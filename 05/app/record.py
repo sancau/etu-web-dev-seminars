@@ -16,7 +16,6 @@ class Record:
 
     def save(self):
         if self.id:
-            print(self.id, self.title, self.message)
             db.sql("""
                 UPDATE records
                 SET title = :title,

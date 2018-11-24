@@ -4,7 +4,6 @@ import json
 
 
 def index(r):
-    print('index')
     return Response.build_text_file('index.html')
 
 
