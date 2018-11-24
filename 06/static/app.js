@@ -1,16 +1,18 @@
 (function () {
 	'use strict';
 
-	const recordHTML = (title, message) => `
-  <div class="record">
-    <div class="title">
-      ${title}
+	const recordHTML = (title, message) => (
+    `
+    <div class="record">
+      <div class="title">
+        ${title}
+      </div>
+      <div class="message">
+        ${message}
+      </div>
     </div>
-    <div class="message">
-      ${message}
-    </div>
-  </div>
-  `;
+    `
+  );
 
 	const renderRecord = (title, message) => {
     const container = document.getElementById('records-container');
